@@ -1,5 +1,4 @@
 ﻿using DesignPattern.Singleton;
-using Singleton;
 
 var singletonNotThreadSafe = SingletonNotThreadSafe.Instance;
 await singletonNotThreadSafe.GetMethodAsync();

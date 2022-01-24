@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Singleton
+namespace DesignPattern.Singleton
 {
     /// <summary>
     /// 성능 문제가 생길 가능성이 있음
