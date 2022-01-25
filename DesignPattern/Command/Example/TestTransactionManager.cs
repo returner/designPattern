@@ -31,6 +31,13 @@ namespace DesignPattern.Command.Example
             transactionManager.ProcessPendingTransaction();
             Assert.IsFalse(transactionManager.HasPendingTransactions);
             Assert.AreEqual(50, suesAccount.Balance);
+
+            var aAccount = new Account("Aaa", 10);
+            var bAccount = new Account("Bbb", 20);
+            var transfer = new Transfer(aAccount, bAccount, 5);
+            transactionManager.AddTransaction(transfer);
+            transactionManager.ProcessPendingTransaction();
+
         }
     }
 }
